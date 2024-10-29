@@ -14,11 +14,8 @@ export default defineConfig({
         outDir: '../dist',
         emptyOutDir: true,
         sourcemap: true,
-        // Add rollup options to ensure proper asset handling
         rollupOptions: {
-            input: {
-                main: '/src/index.html'
-            }
+            input: 'src/index.html'  // Changed this line
         }
     },
     plugins: [
